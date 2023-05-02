@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Statistics } from '../interfaces/statistics';
+import { Item } from '../interfaces/item';
 
 @Component({
   selector: 'app-views-home',
@@ -11,5 +12,18 @@ export class ViewsHomeComponent {
     { value: 22, label: '# of Users' },
     { value: 900, label: 'Revenue' },
     { value: 50, label: 'Reviews' },
+  ];
+
+  items: Item[] = [
+    {
+      image: '/assets/images/couch.jpeg',
+      title: 'Couch',
+      description: 'This is a fantastic couch to sit on',
+    },
+    {
+      image: '/assets/images/dresser.jpeg',
+      title: 'Dresser',
+      description: 'This is a great dresser to put stuff in',
+    },
   ];
 }
